@@ -62,3 +62,49 @@ date
 
 Задание *
 Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+1.Вариант
+
+#!/bin/bash
+
+cd folder1
+
+mkdir folder{1,2,3}
+
+cd folder1
+
+touch {file1.txt,file2.txt,file3.txt,file4.json,file5.json}
+
+mkdir folder{1,2,3}
+
+ls -la
+
+mv file1.txt file2.txt folder3
+
+2.Вариант
+
+#!/bin/bash
+
+zaiti="cd folder1"
+
+sozdat="mkdir folder1 folder2 folder3"
+
+faili="touch file1.txt file2.txt file3.txt file4.json file5.json"
+
+spisok="ls -la"
+
+peremestit="mv file1.txt file2.txt folder3"
+
+$zaiti
+
+$sozdat
+
+$zaiti
+
+$faili
+
+$sozdat
+
+$spisok
+
+$peremestit
